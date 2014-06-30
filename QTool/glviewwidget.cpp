@@ -5,6 +5,15 @@
 
 #include <gl/glu.h>
 
+#include "kazmath/utility.h"
+#include "kazmath/vec3.h"
+#include "kazmath/mat3.h"
+#include "kazmath/quaternion.h"
+
+#include "base/CCDirector.h"
+
+USING_NS_CC;
+
 QColor g_clearColor = Qt::black;
 
 GLViewWidget::GLViewWidget(QWidget *parent, QGLWidget *shareWidget)
@@ -34,7 +43,6 @@ void GLViewWidget::paintGL()
 
 	glLoadIdentity();	
 
-
 	glTranslatef(-1.5f, 0.0f, -6.0f);
 
 	glBegin(GL_TRIANGLES);							// 绘制三角形
@@ -42,6 +50,9 @@ void GLViewWidget::paintGL()
 		glVertex3f(-1.0f,-1.0f, 0.0f);					// 左下
 		glVertex3f( 1.0f,-1.0f, 0.0f);					// 右下
 	glEnd();								// 三角形绘制结束
+
+	//Director::getInstance()->mainLoop();
+
 
 }
 #include <qgl.h>

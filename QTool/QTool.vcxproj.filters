@@ -33,6 +33,18 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="kazmath">
+      <UniqueIdentifier>{946022b7-6668-4a0e-9f0a-0b22f73dfdb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kazmath\GL">
+      <UniqueIdentifier>{fa2726d0-692d-4cf5-9e3d-c23b59a83c53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cocos">
+      <UniqueIdentifier>{f63f7ad1-a93b-49ed-b110-96fe9ebdb232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cocos\base">
+      <UniqueIdentifier>{71c7f92d-0e2c-4931-95e3-afc878fc73c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -59,6 +71,57 @@
     <ClCompile Include="GeneratedFiles\Release\moc_glviewwidget.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="kazmath\GL\mat4stack.c">
+      <Filter>kazmath\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\GL\matrix.c">
+      <Filter>kazmath\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\mat4.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\neon_matrix_impl.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\plane.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\quaternion.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\ray2.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\utility.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\vec2.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\vec3.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\vec4.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\aabb.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="kazmath\mat3.c">
+      <Filter>kazmath</Filter>
+    </ClCompile>
+    <ClCompile Include="cocos\CCNode.cpp">
+      <Filter>cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="cocos\base\CCAutoReleasePool.cpp">
+      <Filter>cocos\base</Filter>
+    </ClCompile>
+    <ClCompile Include="cocos\base\CCRef.cpp">
+      <Filter>cocos\base</Filter>
+    </ClCompile>
+    <ClCompile Include="cocos\base\CCDirector.cpp">
+      <Filter>cocos\base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="mainwindow.h">
@@ -83,6 +146,66 @@
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_glviewwidget.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\GL\mat4stack.h">
+      <Filter>kazmath\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\GL\matrix.h">
+      <Filter>kazmath\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\mat3.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\mat4.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\neon_matrix_impl.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\plane.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\quaternion.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\ray2.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\utility.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\vec2.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\vec3.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\vec4.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\aabb.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="kazmath\kazmath.h">
+      <Filter>kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="cocos\CCNode.h">
+      <Filter>cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="cocos\base\CCPlatformMacros.h">
+      <Filter>cocos\base</Filter>
+    </ClInclude>
+    <ClInclude Include="cocos\base\ccMacros.h">
+      <Filter>cocos\base</Filter>
+    </ClInclude>
+    <ClInclude Include="cocos\base\CCAutoReleasePool.h">
+      <Filter>cocos\base</Filter>
+    </ClInclude>
+    <ClInclude Include="cocos\base\CCRef.h">
+      <Filter>cocos\base</Filter>
+    </ClInclude>
+    <ClInclude Include="cocos\base\CCDirector.h">
+      <Filter>cocos\base</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
