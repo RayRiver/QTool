@@ -5,10 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;cxx;c;def</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h</Extensions>
-    </Filter>
     <Filter Include="Form Files">
       <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
       <Extensions>ui</Extensions>
@@ -44,6 +40,12 @@
     </Filter>
     <Filter Include="cocos\base">
       <UniqueIdentifier>{71c7f92d-0e2c-4931-95e3-afc878fc73c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GL">
+      <UniqueIdentifier>{08a6e100-af52-481d-b1d3-7fda674b3a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cocos\math">
+      <UniqueIdentifier>{6b4ea694-1ba6-4952-bd97-a298e5046108}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -122,22 +124,31 @@
     <ClCompile Include="cocos\base\CCDirector.cpp">
       <Filter>cocos\base</Filter>
     </ClCompile>
+    <ClCompile Include="GLObject.cpp">
+      <Filter>GL</Filter>
+    </ClCompile>
+    <ClCompile Include="cocos\math\Vec3.cpp">
+      <Filter>cocos\math</Filter>
+    </ClCompile>
+    <ClCompile Include="cocos\math\MathUtil.cpp">
+      <Filter>cocos\math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="mainwindow.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="mainwindow.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
     <CustomBuild Include="mainwindow.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="glviewwidget.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="glviewwidget.ui">
       <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="glviewwidget.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>Source Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -207,8 +218,31 @@
     <ClInclude Include="cocos\base\CCDirector.h">
       <Filter>cocos\base</Filter>
     </ClInclude>
+    <ClInclude Include="GLObject.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="cocos\math\Vec3.h">
+      <Filter>cocos\math</Filter>
+    </ClInclude>
+    <ClInclude Include="cocos\cocos2d.h">
+      <Filter>cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="cocos\math\MathUtil.h">
+      <Filter>cocos\math</Filter>
+    </ClInclude>
+    <ClInclude Include="cocos\math\CCMathBase.h">
+      <Filter>cocos\math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="QTool.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cocos\math\MathUtil.inl">
+      <Filter>cocos\math</Filter>
+    </None>
+    <None Include="cocos\math\Vec3.inl">
+      <Filter>cocos\math</Filter>
+    </None>
   </ItemGroup>
 </Project>

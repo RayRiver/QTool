@@ -80,6 +80,8 @@
     <ClCompile Include="cocos\base\CCDirector.cpp" />
     <ClCompile Include="cocos\base\CCRef.cpp" />
     <ClCompile Include="cocos\CCNode.cpp" />
+    <ClCompile Include="cocos\math\MathUtil.cpp" />
+    <ClCompile Include="cocos\math\Vec3.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_glviewwidget.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -98,6 +100,7 @@
     <ClCompile Include="GeneratedFiles\Release\moc_mainwindow.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="GLObject.cpp" />
     <ClCompile Include="glviewwidget.cpp" />
     <ClCompile Include="kazmath\aabb.c" />
     <ClCompile Include="kazmath\GL\mat4stack.c" />
@@ -146,8 +149,13 @@
     <ClInclude Include="cocos\base\CCPlatformMacros.h" />
     <ClInclude Include="cocos\base\CCRef.h" />
     <ClInclude Include="cocos\CCNode.h" />
+    <ClInclude Include="cocos\cocos2d.h" />
+    <ClInclude Include="cocos\math\CCMathBase.h" />
+    <ClInclude Include="cocos\math\MathUtil.h" />
+    <ClInclude Include="cocos\math\Vec3.h" />
     <ClInclude Include="GeneratedFiles\ui_glviewwidget.h" />
     <ClInclude Include="GeneratedFiles\ui_mainwindow.h" />
+    <ClInclude Include="GLObject.h" />
     <ClInclude Include="kazmath\aabb.h" />
     <ClInclude Include="kazmath\GL\mat4stack.h" />
     <ClInclude Include="kazmath\GL\matrix.h" />
@@ -199,6 +207,10 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cocos\math\MathUtil.inl" />
+    <None Include="cocos\math\Vec3.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
